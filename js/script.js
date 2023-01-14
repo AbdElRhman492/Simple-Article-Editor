@@ -8,7 +8,7 @@ let invert = document.getElementById("invert");
 let fSize = document.getElementById("size");
 let text = document.getElementById("text");
 
-let fonts = ["arial", "segoe", "cairo", "mono"];
+let fonts = ["arial", "segoe", "cairo", "ubuntu"];
 
 // Default font-size
 let sizeValue = 16;

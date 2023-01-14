@@ -1,25 +1,37 @@
-.container .output #text.segoe {
-  font-family: "Segoe UI";
+@font-face {
+  font-family: "segoe";
+  src: local("Segoe UI Regular"), url("../fonts/segoe.woff") format("woff");
 }
-.container .output #text.cairo {
+@font-face {
+  font-family: "cairo";
+  src: local("Cairo Font"), url("../fonts/cairo.woff") format("woff");
+}
+@font-face {
+  font-family: "ubuntu";
+  src: local("Ubuntu Font"), url("../fonts/ubuntu.woff") format("woff");
+}
+body .container .output #text.segoe {
+  font-family: segoe;
+}
+body .container .output #text.cairo {
   font-family: cairo;
 }
-.container .output #text.mono {
-  font-family: monospace;
+body .container .output #text.ubuntu {
+  font-family: ubuntu;
 }
-.container .output #text.arial {
+body .container .output #text.arial {
   font-family: arial;
 }
-.container .output #text.bold {
+body .container .output #text.bold {
   font-weight: bold;
 }
-.container .output #text.italic {
+body .container .output #text.italic {
   font-style: italic;
 }
-.container .output #text.u-line {
+body .container .output #text.u-line {
   text-decoration: underline;
 }
-.container .output #text.invert {
+body .container .output #text.invert {
   background: #fefefe;
   color: #3e3e3e;
 }
@@ -29,7 +41,6 @@
   margin: 0;
   box-sizing: border-box;
   text-transform: capitalize;
-  font-family: system-ui;
 }
 
 body {
@@ -60,6 +71,7 @@ body .container .output #text {
   padding: 10px;
   margin-top: 15px;
   border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body .container .ribbon #f-family select {
