@@ -1,0 +1,129 @@
+.container .output #text.segoe {
+  font-family: "Segoe UI";
+}
+.container .output #text.cairo {
+  font-family: cairo;
+}
+.container .output #text.mono {
+  font-family: monospace;
+}
+.container .output #text.arial {
+  font-family: arial;
+}
+.container .output #text.bold {
+  font-weight: bold;
+}
+.container .output #text.italic {
+  font-style: italic;
+}
+.container .output #text.u-line {
+  text-decoration: underline;
+}
+.container .output #text.invert {
+  background: #fefefe;
+  color: #3e3e3e;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: system-ui;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  background: #333;
+}
+body .container {
+  width: 80%;
+  padding: 15px 25px;
+  margin: auto;
+  border-radius: 8px;
+  background: #222;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body .container .ribbon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+}
+body .container .output #text {
+  background: #333;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+}
+
+body .container .ribbon #f-family select {
+  background: #333;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button {
+  background: #333;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-style: bold;
+  padding: 2px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.active {
+  color: #f00;
+}
+
+body .container .ribbon #f-style {
+  display: flex;
+  gap: 3px;
+}
+body .container .ribbon #f-style #bold {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .container .ribbon #f-style #italic {
+  border-radius: 0;
+}
+body .container .ribbon #f-style #u-line {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body .container .ribbon #f-size {
+  display: flex;
+  gap: 3px;
+}
+body .container .ribbon #f-size #minus {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+body .container .ribbon #f-size #plus {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+body .container .ribbon #f-size span {
+  background: #333;
+  padding: 0 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

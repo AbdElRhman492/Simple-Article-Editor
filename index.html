@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Articles Editor</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="ribbon">
+        <div id="f-family">
+          <select id="select-font">
+            <option value="arial" selected>Choose Font :</option>
+            <option value="segoe">Segoe UI</option>
+            <option value="cairo">Cairo</option>
+            <option value="mono">Monospace</option>
+          </select>
+        </div>
+        <div id="f-style">
+          <button id="bold">b</button>
+          <button id="italic">em</button>
+          <button id="u-line">u</button>
+        </div>
+        <div id="f-size">
+          <button id="minus">-</button>
+          <span id="size">16</span>
+          <button id="plus">+</button>
+        </div>
+        <div class="color">
+          <button id="invert">invert colors</button>
+        </div>
+      </div>
+      <div class="output">
+        <p id="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit
+          similique quasi possimus deleniti reprehenderit et tempore atque
+          explicabo hic. Blanditiis doloremque beatae vitae delectus excepturi
+          impedit. Ullam quia exercitationem esse.
+        </p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
